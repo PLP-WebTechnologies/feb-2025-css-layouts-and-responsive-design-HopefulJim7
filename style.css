@@ -1,0 +1,74 @@
+/* Reset and general styling */
+body {
+    background-color: rgb(29, 169, 216);
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navigation bar styling */
+  
+  nav {
+    display: flex; /* Activates Flexbox */
+    justify-content: flex-start; /* Align items from left to right */
+    gap: 20px; /* Adds space between items */
+    background-color: #333;
+    padding: 10px;
+  }
+
+  nav a {
+    color: rgb(28, 77, 224);
+    text-decoration: none; /* Removes underline from links */
+    font-size: 18px;
+  }
+
+  nav a:hover {
+    text-decoration: underline; /* Underline on hover for better visibility */
+  }
+
+  
+  /* Content area styling with CSS Grid */
+  .content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .content div {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    gap: 10px;
+    padding: 20px;
+  }
+
+  .column {
+    background-color: rgb(12, 170, 222);
+    padding: 20px;
+    text-align: center;
+    border: 2px solid navy;
+  }
+  footer {
+    background-color: #333; /* Set footer background color */
+    color: rgb(219, 215, 215); /* Set text color */
+    text-align: center; /* Move content to the right */
+    padding: 20px; /* Add space inside the footer */
+  }
+
+  /* Media queries for responsiveness */
+  @media (min-width: 768px) {
+    .content {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .content {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
